@@ -4,6 +4,9 @@ import { AeroportService } from './aeroport.service';
 import { AeroportController } from './aeroport.controller';
 import { MongooseModule } from '@nestjs/mongoose';
 import { Aeroport, AeroportSchema } from './schemas/aeroport.schemas';
+import * as dotenv from 'dotenv';
+
+dotenv.config();
 
 @Module({
   imports: [
